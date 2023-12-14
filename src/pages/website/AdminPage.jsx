@@ -1,12 +1,14 @@
 import React from 'react';
+import DashboardLayout from '../layouts/DashboardLayout';
+import AdminTable from '../../components/tables/adminTable/AdminTable';
 
-import AdminLayout from '../layouts/AdminLayout';
 
 const AdminPage = () => {
     return (
-        <AdminLayout>
+        <DashboardLayout>
             <div color='red' >hilckafilanfil</div>
-        </AdminLayout>
+            <AdminTable></AdminTable>
+        </DashboardLayout>
     );
 }
 
