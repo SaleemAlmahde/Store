@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Table } from 'react-bootstrap';
-import RawTable from './rawTable';
+import RawTable from './RawTable';
 import { useState, useEffect } from 'react';
 
 const AdminTable = () => {
