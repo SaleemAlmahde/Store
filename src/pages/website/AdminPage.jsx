@@ -1,14 +1,20 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import DashboardLayout from '../layouts/DashboardLayout';
 import AdminTable from '../../components/tables/adminTable/AdminTable';
+import RawTable from '../../components/tables/adminTable/rawTable';
+import { Container } from 'react-bootstrap';
 
 
 const AdminPage = () => {
+
     return (
+        
+        <>
         <DashboardLayout>
-            <div color='red' >hilckafilanfil</div>
             <AdminTable></AdminTable>
         </DashboardLayout>
+        </>
+
     );
 }
 

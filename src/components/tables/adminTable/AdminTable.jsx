@@ -1,39 +1,62 @@
 import React from 'react';
-import { Table } from 'react-bootstrap';
+import { Container, Table } from 'react-bootstrap';
+import RawTable from './rawTable';
+import { useState, useEffect } from 'react';
 
 const AdminTable = () => {
+
+  const productsData = [
+    {
+        name: "product 1",
+        price: "200 sp",
+        number: "3"
+    },
+    {
+        name: "product 2",
+        price: "300 sp",
+        number: "7"
+    },
+    {
+        name: "product 3",
+        price: "500 sp",
+        number: "1"
+    },
+    {
+        name: "product 4",
+        price: "2500 sp",
+        number: "6"
+    },
+]
+const [products, setProducts] = useState(productsData)
+
+useEffect(() => {
+}, [])
+
+
     return (
-        <>
+        <Container style={{backgroundColor:"green"}}>
+          <input type="search" name="" id="" />
         <Table striped bordered hover>
       <thead>
         <tr>
           <th>#</th>
-          <th>First Name</th>
-          <th>Last Name</th>
-          <th>Username</th>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Number</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>1</td>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td>@fat</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td colSpan={2}>Larry the Bird</td>
-          <td>@twitter</td>
-        </tr>
+      
+        {
+          products.map((item, index) => {
+            return (
+                <RawTable index={index} name={item.name} price={item.price} number={item.number} />
+            )
+        })
+        }
       </tbody>
     </Table>
-        </>
+    </Container>
     );
 }
 

@@ -6,3 +6,17 @@
 .children-aria {
     background-color: #ccc;
 }
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    padding: 0 5%;
+}
