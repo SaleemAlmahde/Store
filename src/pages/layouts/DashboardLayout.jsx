@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, NavDropdown, Navbar, Nav, Collapse } from 'react-bootstrap';
+import SideBar from '../../components/sideBar/SideBar';
 
 const DashboardLayout = ({children}) => {
     return (
@@ -20,6 +21,7 @@ const DashboardLayout = ({children}) => {
           </Navbar.Brand>
         </Container>
       </Navbar>
+      <SideBar></SideBar>
     <Container>
      {children}
     </Container>

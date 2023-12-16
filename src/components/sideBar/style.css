@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    position: relative;
+}
+
+ul{
+    list-style: none;
+}
+
+/* Side bar style */
+
+/* .container{
+    display: flex;
+    justify-content: space-around;
+} */
+
+.side-nav-bar{
+    height: 100vh;
+    width: 190px;
+    background-color: #18c29c;
+    transition: all 0.5s ease;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    flex-direction: column;
+}
+
+.side-nav-bar.active{
+    width: 49px;
+}
+
+.side-nav-bar span{
+    background: none;
+}
+
+.side-nav-bar .logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 12px 0px;
+    margin-left: 10px;
+    width: 90%;
+}
+
+.side-nav-bar.active .logo-img{
+    display: none;
+}
+
+.side-nav-bar .logo img{
+    width: 55px;
+}
+
+.side-nav-bar #side-bar-btn{
+    background-color: #18c29c;
+    border: none;
+    position: absolute;
+    left: 150px;
+    transition: all 0.5s ease;
+}
+
+.side-nav-bar.active #side-bar-btn{
+    left: 13px;
+    top: 12px;
+}
+
+.side-nav-bar .logo #btn{
+    font-size: 22px;
+    transition: all 0.5s ease;
+}
+
+.side-nav-bar.active .logo #btn{
+    font-size: 28px;
+}
+
+.side-nav-bar ul{
+margin-top: 22px;
+}
+
+.side-nav-bar.active ul{
+    margin-left: 3px;
+}
+
+.side-nav-bar li{
+    width: 90%;
+    height: 50px;
+    margin-left: 10px;
+    margin-block-start: 8px;
+}
+
+.side-nav-bar .profile{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* position: absolute; */
+    bottom: 0px;
+    left: 0;
+    background-color: #8ed7c6;
+    width: 100%;
+}
+
+.side-nav-bar .profile-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.side-nav-bar.active .profile-content{
+    display: none;
+}
+
+.side-nav-bar .profile-img img{
+    width: 30px;
+}
+
+.side-nav-bar.active .profile-img{
+    display: none;
+}
+
+.side-nav-bar.active .profile-onfo{
+    display: none;
+}
+
+.side-nav-bar li a{
+    color: black;
+    display: flex;
+    align-self: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 10px 0px;
+    border-radius: 10%;
+}
+
+.side-nav-bar li a:hover{
+    background-color: #8ed7c6;
+}
+
+.side-nav-bar li a i{
+    font-size: 20px;
+    /* height: 50px; */
+    min-width: 35px;
+    transition: all 0.5s ease;
+}
+
+.side-nav-bar.active li a i{
+    font-size: 28px;
+}
+
+.side-nav-bar #log-out{
+    background-color: #8ed7c6;
+    font-size: 24px;
+    border: none;
+}
+
+.side-nav-bar.active #log-out{
+    font-size: 28px;
+}
