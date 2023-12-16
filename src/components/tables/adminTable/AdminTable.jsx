@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Table } from 'react-bootstrap';
 import RawTable from './RawTable';
 import { useState, useEffect } from 'react';
+import './style.css'
 
 const AdminTable = () => {
 
@@ -34,7 +35,9 @@ useEffect(() => {
 
 
     return (
-        <Container style={{backgroundColor:"green"}}>
+        <Container
+        //  style={{backgroundColor:"green"}}
+         >
           <input type="search" name="" id="" />
         <Table striped bordered hover>
       <thead>
