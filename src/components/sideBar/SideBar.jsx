@@ -1,5 +1,7 @@
 import React from 'react';
 import './style.css'
+import '../../assets/plugins/font-awesome/fonts/fontawesome-webfont.svg'
+
 
 const SideBar = () => {
     return (
@@ -10,7 +12,8 @@ const SideBar = () => {
             <img src="assets/images/logo (1).png" alt="logo"></img>
         </div>
         <button id="side-bar-btn">
-        <i class="fa fa-bars " id="btn"></i>
+        {/* <i class="fa fa-bars " id="btn"></i> */}
+        hello
     </button>
         </div>
         <ul class="sidebar-menu">
@@ -67,7 +70,9 @@ const SideBar = () => {
     </button>
 </div>
     </div>
+
     );
+    
 }
 
 export default SideBar;

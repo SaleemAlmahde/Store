@@ -28,6 +28,9 @@ ul{
     justify-content: space-between;
     /* align-items: center; */
     flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .side-nav-bar.active{
