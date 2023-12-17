@@ -3,7 +3,7 @@ import DashboardLayout from '../layouts/DashboardLayout';
 import AdminTable from '../../components/tables/adminTable/AdminTable';
 
 
-const AdminPage = () => {
+const AdminDashboard = () => {
 
     return (
         
@@ -16,4 +16,4 @@ const AdminPage = () => {
     );
 }
 
-export default AdminPage;
+export default AdminDashboard;

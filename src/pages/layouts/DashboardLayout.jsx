@@ -21,9 +21,10 @@ const DashboardLayout = ({children}) => {
           </Navbar.Brand>
         </Container>
       </Navbar>
-      <SideBar></SideBar>
+      <SideBar>
+      </SideBar>
     <Container>
-     {children}
+    {children}
     </Container>
         </>
     );
