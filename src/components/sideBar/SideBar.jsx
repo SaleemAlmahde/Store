@@ -1,17 +1,32 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './style.css'
 import '../../assets/plugins/font-awesome/fonts/fontawesome-webfont.svg'
 
 
 const SideBar = () => {
+
+const [isActive,setIsActive]=useState(true)
+
+useEffect(()=>{
+
+}, [isActive])
+
     return (
-        <div class="side-nav-bar">
+        <div class={isActive ? "side-nav-bar active" : "side-nav-bar"}>
         <div class="container">
         <div class="logo">
             <div class="logo-img">
             <img src="assets/images/logo (1).png" alt="logo"></img>
         </div>
-        <button id="side-bar-btn">
+        <button id="side-bar-btn" onClick={()=>{
+            if(isActive===false){
+            setIsActive(true)
+            console.log(isActive)
+        }else{
+            setIsActive(false)
+            console.log(isActive)
+        }
+        }}>
         {/* <i class="fa fa-bars " id="btn"></i> */}
         hello
     </button>
